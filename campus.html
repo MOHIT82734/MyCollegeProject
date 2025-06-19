@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Visit | Your University</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    .campus-visit {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .visit-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .visit-title h1 {
+      font-size: 36px;
+      color: #1a237e;
+    }
+
+    .visit-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .visit-video {
+      flex: 1 1 45%;
+    }
+
+    .visit-video video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .visit-text {
+      flex: 1 1 45%;
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .visit-gallery {
+      text-align: center;
+      margin: 50px 0 30px;
+    }
+
+    .visit-gallery h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #0d47a1;
+    }
+
+    .gallery-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .gallery-images img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-images img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Optional footer placeholder */
+    footer {
+      background-color: #1a237e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="campus-visit">
+    <div class="visit-title">
+      <h1>Campus Visit</h1>
+    </div>
+
+    <div class="visit-content">
+      <div class="visit-video">
+        <video src="media/campus-tour.mp4" autoplay muted loop></video>
+        <!-- Replace "media/campus-tour.mp4" with your actual file path -->
+      </div>
+      <div class="visit-text">
+        <p>Welcome to our beautiful campus nestled in the heart of innovation and excellence. Our university offers a serene and technologically advanced environment for students to learn, grow, and thrive.</p>
+        <p>Explore our high-tech labs, vibrant cultural centers, and lush green landscapes that make your college life unforgettable. Join us on a guided video tour and witness the dynamic life and cutting-edge facilities firsthand.</p>
+      </div>
+    </div>
+
+    <div class="visit-gallery">
+      <h2>Gallery Highlights</h2>
+      <div class="gallery-images">
+        <img src="images/campus1.jpg" alt="Campus View 1">
+        <img src="images/campus2.jpg" alt="Campus View 2">
+        <img src="images/campus3.jpg" alt="Campus View 3">
+        <!-- Replace image paths as per your project -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer: Replace with your actual site footer -->
+  <footer>
+    <p>&copy; 2025 Your University Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration | Graphic Era</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+       background: url('https://geu.ac.in/wp-content/uploads/2023/04/academics-pal-bg.jpg');
+        position: relative;
+
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .registration-container {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 30px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    form input[type="submit"] {
+      background-color: #0d47a1;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s;
+    }
+nav ul li a.registration-link {
+  color: #e9e5e6; /* Pink color for registration */
+}
+
+nav ul li a.registration-link:hover {
+  color: #e7e7e7;
+}
+
+    form input[type="submit"]:hover {
+      background-color: #093170;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #1a237e;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="registration-container">
+    <h2>Student Registration Form</h2>
+    <form action="reg.php" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="text" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Mobile Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="course">Course Applying For:</label>
+      <select id="course" name="course" required>
+        <option value="">Select</option>
+        <option value="BCA">BCA</option>
+        <option value="MCA">MCA</option>
+        <option value="BTech">BTech</option>
+        <option value="MBA">MBA</option>
+      </select>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required>
+
+      <label for="pincode">Pincode:</label>
+      <input type="text" id="pincode" name="pincode" required>
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Graphic Era Deemed to be University | Follow us on 
+      <a href="#" style="color: #ffcc00;">Instagram</a> | 
+      <a href="#" style="color: #ffcc00;">LinkedIn</a>
+    </p>
+  </div>
+
+</body>
+</html>
